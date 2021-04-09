@@ -99,3 +99,26 @@ target1 = visual.TextStim(win=win, name='target1',
                           languageStyle='LTR',
                           depth=0.0)
 response1 = keyboard.Keyboard()
+
+
+# Initialize components for Routine "Instructions2" of task2
+Instructions2Clock = core.Clock()
+Instructiontext2 = visual.TextStim(win=win, name='Instructiontext2',
+                                   text='Now the word text and color of words can be different. Choose response based on color of word and not the text of word.',
+                                   font='Arial',
+                                   pos=(0, 0), height=0.1, wrapWidth=None, ori=0,
+                                   color='white', colorSpace='rgb', opacity=1,
+                                   languageStyle='LTR',
+                                   depth=0.0)
+key_resp_2 = keyboard.Keyboard()
+
+# Initialize components for Routine "task2"
+trial2Clock = core.Clock()
+target2 = visual.TextStim(win=win, name='target2',
+                          text='default text',
+                          font='Arial',
+                          pos=(0, 0), height=0.1, wrapWidth=None, ori=0,
+                          color='white', colorSpace='rgb', opacity=1,
+                          languageStyle='LTR',
+                          depth=0.0)
+response2 = keyboard.Keyboard()

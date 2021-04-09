@@ -12,6 +12,6 @@
 >
 > The log files (with responses) of each participant are inside the folder "log files of participants"
 
-## Participants
+## Performance metrics
 
 > Response time and accuracy metrics are used for analysis and the tables with metrics of each participant are described in the submission report

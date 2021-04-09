@@ -122,3 +122,32 @@ target2 = visual.TextStim(win=win, name='target2',
                           languageStyle='LTR',
                           depth=0.0)
 response2 = keyboard.Keyboard()
+
+# Initialize components for Routine "Instructions" of task 3
+Instructions3Clock = core.Clock()
+instructiontext3 = visual.TextStim(win=win, name='instructiontext3',
+                                   text='Now you will have color filled rectangles along with words.\n\n',
+                                   font='Arial',
+                                   pos=(0, 0), height=0.1, wrapWidth=None, ori=0,
+                                   color='white', colorSpace='rgb', opacity=1,
+                                   languageStyle='LTR',
+                                   depth=0.0)
+key_resp_3 = keyboard.Keyboard()
+
+# Initialize components for Routine "task3"
+trial3Clock = core.Clock()
+target3 = visual.TextStim(win=win, name='target3',
+                          text='default text',
+                          font='Arial',
+                          pos=(0, 0), height=0.1, wrapWidth=None, ori=0,
+                          color='white', colorSpace='rgb', opacity=1,
+                          languageStyle='LTR',
+                          depth=0.0)
+response3 = keyboard.Keyboard()
+polygon = visual.Rect(
+    win=win, name='polygon',
+    width=(0.5, 0.5)[0], height=(0.5, 0.5)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor=[1, 1, 1], lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=0.2, depth=-2.0, interpolate=True)

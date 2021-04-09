@@ -75,3 +75,15 @@ if expInfo['frameRate'] != None:
     frameDur = 1.0 / round(expInfo['frameRate'])
 else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
+
+
+# Initialize components for "Instructions" of Task 1
+InstructionsClock = core.Clock()
+instructionstext = visual.TextStim(win=win, name='instructionstext',
+                                   text='Choose the color of letters ignoring the word\n\nleft = red\nright = blue\ndown = green\n',
+                                   font='Arial',
+                                   pos=(0, 0), height=0.1, wrapWidth=None, ori=0,
+                                   color='white', colorSpace='rgb', opacity=1,
+                                   languageStyle='LTR',
+                                   depth=0.0)
+key_resp = keyboard.Keyboard()

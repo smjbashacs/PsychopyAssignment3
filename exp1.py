@@ -888,3 +888,16 @@ for thisTrial_3 in trials_3:
     thisExp.nextEntry()
 
 ###################### End of task 3 ###############################################################
+
+# close everything and quiz the experiment
+# and win.timeOnFlip() tasks get executed before quitting
+win.flip()
+
+# these shouldn't be strictly necessary (should auto-save)
+thisExp.saveAsWideText(filename+'.csv', delim='auto')
+thisExp.saveAsPickle(filename)
+logging.flush()
+# make sure everything is closed down
+thisExp.abort()  # or data files will save again on exit
+win.close()
+core.quit()

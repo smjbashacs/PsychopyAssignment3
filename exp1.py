@@ -151,3 +151,9 @@ polygon = visual.Rect(
     lineWidth=1, lineColor=[1, 1, 1], lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=0.2, depth=-2.0, interpolate=True)
+
+
+# Create some handy timers
+globalClock = core.Clock()  # to track the time since experiment started
+# to track time remaining of each (non-slip) routine
+routineTimer = core.CountdownTimer()

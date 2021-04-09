@@ -398,3 +398,240 @@ for thisTrial_1 in trials_1:
     thisExp.nextEntry()
 
 ###################### End of task 1 ###############################################################
+
+
+###################### start of task 2 ###############################################################
+continueRoutine = True
+# update component parameters for each repeat
+key_resp_2.keys = []
+key_resp_2.rt = []
+_key_resp_2_allKeys = []
+# keep track of which components have finished
+Instructions2Components = [Instructiontext2, key_resp_2]
+for thisComponent in Instructions2Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+# t0 is time of first possible flip
+Instructions2Clock.reset(-_timeToFirstFrame)
+frameN = -1
+
+# -------Run Routine "Instructions2"-------
+while continueRoutine:
+    # get current time
+    t = Instructions2Clock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=Instructions2Clock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+
+    # *Instructiontext2* updates
+    if Instructiontext2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        Instructiontext2.frameNStart = frameN  # exact frame index
+        Instructiontext2.tStart = t  # local t and not account for scr refresh
+        Instructiontext2.tStartRefresh = tThisFlipGlobal  # on global time
+        # time at next scr refresh
+        win.timeOnFlip(Instructiontext2, 'tStartRefresh')
+        Instructiontext2.setAutoDraw(True)
+
+    # *key_resp_2* updates
+    if key_resp_2.status == NOT_STARTED and t >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_2.frameNStart = frameN  # exact frame index
+        key_resp_2.tStart = t  # local t and not account for scr refresh
+        key_resp_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_2, 'tStartRefresh')  # time at next scr refresh
+        key_resp_2.status = STARTED
+        # keyboard checking is just starting
+        key_resp_2.clock.reset()  # now t=0
+        key_resp_2.clearEvents(eventType='keyboard')
+    if key_resp_2.status == STARTED:
+        theseKeys = key_resp_2.getKeys(keyList=None, waitRelease=False)
+        _key_resp_2_allKeys.extend(theseKeys)
+        if len(_key_resp_2_allKeys):
+            # just the last key pressed
+            key_resp_2.keys = _key_resp_2_allKeys[-1].name
+            key_resp_2.rt = _key_resp_2_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in Instructions2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "Instructions2"-------
+for thisComponent in Instructions2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('Instructiontext2.started', Instructiontext2.tStartRefresh)
+thisExp.addData('Instructiontext2.stopped', Instructiontext2.tStopRefresh)
+# the Routine "Instructions2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# set up handler to look after randomisation of conditions etc
+trials_2 = data.TrialHandler(nReps=2, method='random',
+                             extraInfo=expInfo, originPath=-1,
+                             trialList=data.importConditions(
+                                 'conditions_trail2.xlsx'),
+                             seed=None, name='trials_2')
+thisExp.addLoop(trials_2)  # add the loop to the experiment
+# so we can initialise stimuli with some values
+thisTrial_2 = trials_2.trialList[0]
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
+if thisTrial_2 != None:
+    for paramName in thisTrial_2:
+        exec('{} = thisTrial_2[paramName]'.format(paramName))
+
+for thisTrial_2 in trials_2:
+    currentLoop = trials_2
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
+    if thisTrial_2 != None:
+        for paramName in thisTrial_2:
+            exec('{} = thisTrial_2[paramName]'.format(paramName))
+
+    # ------Prepare to start Routine "trial2"-------
+    continueRoutine = True
+    # update component parameters for each repeat
+    target2.setColor(color, colorSpace='rgb')
+    target2.setText(word)
+    response2.keys = []
+    response2.rt = []
+    _response2_allKeys = []
+    # keep track of which components have finished
+    trial2Components = [target2, response2]
+    for thisComponent in trial2Components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    trial2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+
+    # -------Run Routine "trial2"-------
+    while continueRoutine:
+        # get current time
+        t = trial2Clock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=trial2Clock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        # number of completed frames (so 0 is the first frame)
+        frameN = frameN + 1
+        # update/draw components on each frame
+
+        # *target2* updates
+        if target2.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+            # keep track of start time/frame for later
+            target2.frameNStart = frameN  # exact frame index
+            target2.tStart = t  # local t and not account for scr refresh
+            target2.tStartRefresh = tThisFlipGlobal  # on global time
+            # time at next scr refresh
+            win.timeOnFlip(target2, 'tStartRefresh')
+            target2.setAutoDraw(True)
+        if target2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > target2.tStartRefresh + 3.0-frameTolerance:
+                # keep track of stop time/frame for later
+                target2.tStop = t  # not accounting for scr refresh
+                target2.frameNStop = frameN  # exact frame index
+                # time at next scr refresh
+                win.timeOnFlip(target2, 'tStopRefresh')
+                target2.setAutoDraw(False)
+
+        # *response2* updates
+        waitOnFlip = False
+        if response2.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+            # keep track of start time/frame for later
+            response2.frameNStart = frameN  # exact frame index
+            response2.tStart = t  # local t and not account for scr refresh
+            response2.tStartRefresh = tThisFlipGlobal  # on global time
+            # time at next scr refresh
+            win.timeOnFlip(response2, 'tStartRefresh')
+            response2.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(response2.clock.reset)  # t=0 on next screen flip
+            # clear events on next screen flip
+            win.callOnFlip(response2.clearEvents, eventType='keyboard')
+        if response2.status == STARTED and not waitOnFlip:
+            theseKeys = response2.getKeys(
+                keyList=['left', 'right', 'down'], waitRelease=False)
+            _response2_allKeys.extend(theseKeys)
+            if len(_response2_allKeys):
+                # just the last key pressed
+                response2.keys = _response2_allKeys[-1].name
+                response2.rt = _response2_allKeys[-1].rt
+                # was this correct?
+                if (response2.keys == str(corans)) or (response2.keys == corans):
+                    response2.corr = 1
+                else:
+                    response2.corr = 0
+                # a response ends the routine
+                continueRoutine = False
+
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in trial2Components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+
+    # -------Ending Routine "trial2"-------
+    for thisComponent in trial2Components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    trials_2.addData('target2.started', target2.tStartRefresh)
+    trials_2.addData('target2.stopped', target2.tStopRefresh)
+    # check responses
+    if response2.keys in ['', [], None]:  # No response was made
+        response2.keys = None
+        # was no response the correct answer?!
+        if str(corans).lower() == 'none':
+            response2.corr = 1  # correct non-response
+        else:
+            response2.corr = 0  # failed to respond (incorrectly)
+    # store data for trials_2 (TrialHandler)
+    trials_2.addData('response2.keys', response2.keys)
+    trials_2.addData('response2.corr', response2.corr)
+    if response2.keys != None:  # we had a response
+        trials_2.addData('response2.rt', response2.rt)
+    trials_2.addData('response2.started', response2.tStartRefresh)
+    trials_2.addData('response2.stopped', response2.tStopRefresh)
+    # the Routine "trial2" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    thisExp.nextEntry()
+
+###################### End of task 2 ###############################################################

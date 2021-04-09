@@ -11,3 +11,7 @@
 > 5 participants of age between 25-30 have performed the stroop task
 >
 > The log files (with responses) of each participant are inside the folder "log files of participants"
+
+## Participants
+
+> Response time and accuracy metrics are used for analysis and the tables with metrics of each participant are described in the submission report

@@ -87,3 +87,15 @@ instructionstext = visual.TextStim(win=win, name='instructionstext',
                                    languageStyle='LTR',
                                    depth=0.0)
 key_resp = keyboard.Keyboard()
+
+
+# Initialize components for Routine "task1"
+trail1Clock = core.Clock()
+target1 = visual.TextStim(win=win, name='target1',
+                          text='default text',
+                          font='Arial',
+                          pos=(0, 0), height=0.1, wrapWidth=None, ori=0,
+                          color='white', colorSpace='rgb', opacity=1,
+                          languageStyle='LTR',
+                          depth=0.0)
+response1 = keyboard.Keyboard()
